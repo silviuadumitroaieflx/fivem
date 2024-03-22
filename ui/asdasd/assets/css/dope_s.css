@@ -1,0 +1,1021 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    --font-size: calc((1vh+1vw)/2);
+    font-size: calc(var(--font-size) * 4);
+    overscroll-behavior: contain;
+}
+
+.h2o-hud-container {
+    display: none;
+    position: relative;
+    left: 86.9%;
+    max-width: 12.5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.536em;
+    user-select: none;
+}
+
+.bank-hud-container {
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+
+}
+
+.bank-hud-container .bank-line-container {
+    display: flex;
+    height: 1.96em;
+    width: 0.115em;
+    padding: 0.115em;
+    right: 0.15em;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-right: 0.19em;
+    margin-left: 0.19em;
+}
+
+.bank-hud-container .bank-container {
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    border-radius: 0 1.602em 1.602em 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.bank-hud-container .bank-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.98em;
+    text-shadow: 0 0 0.265em #000;
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.173em;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.bank-hud-container .bank-container i {
+    position: relative;
+    border-radius: 0.307em;
+    right: 5%;
+}
+
+.bank-hud-container .bank-icon-container {
+    display: flex;
+    padding: 0.115em;
+    right: 5.337em;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 1.602em 1.602em 1.602em 1.602em;
+}
+
+.bank-hud-container .bank-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.504em;
+    height: 1.504em;
+    overflow: hidden;
+}
+
+.bank-hud-container .bank-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cash-hud-container {
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-line-container {
+    display: flex;
+    margin-top: 1.204em;
+    height: 1.96em;
+    width: 0.115em;
+    padding: 0.115em;
+    right: 0.15em;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-right: 0.19em;
+    margin-left: 0.19em;
+}
+
+.cash-hud-container .cash-container {
+    padding: 0.231em;
+    flex-direction: inline;
+    width: 100%;
+    margin-top: 1.204em;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    border-radius: 0 1.602em 1.602em 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.98em;
+    text-shadow: 0 0 0.265em #000;
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.173em;
+    font-family: 'Arial', sans-serif;
+}
+
+.cash-hud-container .cash-container i {
+    position: relative;
+    border-radius: 0.307em;
+    right: 5%;
+}
+
+.cash-hud-container .cash-icon-container {
+    display: flex;
+    padding: 0.115em;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 1.602em 1.602em 1.602em 1.602em;
+}
+
+.cash-hud-container .cash-icon-container .imgBx {
+
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.498em;
+    height: 1.498em;
+    overflow: hidden;
+}
+
+.cash-hud-container .cash-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-hud-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.017em;
+}
+
+.info-hud-container .info-container {
+    position: relative;
+    display: flex;
+    margin: 0 0.536em;
+    text-align: center;
+}
+
+.info-hud-container .info-container .text-container {
+
+    position: absolute;
+    font-size: 0.749em;
+    text-shadow: 0 0 0.161em #000;
+    opacity: 1.0;
+    letter-spacing: 0.058em;
+    font-family: 'Arial', sans-serif;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.info-hud-container .info-container .info-icon-container {
+    display: flex;
+    /*padding: 0.50vh;*/
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 2.668em 2.668em 2.668em 2.668em;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.282em;
+    height: 2.282em;
+    overflow: hidden;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.space-container {
+    display: flex;
+    width: 93.5%;
+    padding: 0.115em;
+    right: 5.337em;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+}
+
+.logo-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.153em;
+}
+
+.logo-icon-container .imgBx {
+    position: relative;
+    max-width: 60%;
+    max-height: 60%;
+    width: 10.028em;
+    height: 5.072em;
+    overflow: hidden;
+}
+
+.logo-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.minimap {
+    display: none;
+    bottom: 10.9%;
+    left: 1.3%;
+    width: 0;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.minimap .back-container {
+    bottom: 10.3%;
+    width: 16.7129em;
+    height: 10.7832em;
+    border: 0.1069em solid;
+    border-color: linear-gradient(100deg, #000000AA, #000000AA);
+    opacity: 1.0;
+    margin-left: 0.0906em;
+    margin-bottom: -0.1177em;
+    border-radius: 2.7926em;
+    position: absolute;
+    display: inline-flex;
+}
+
+.minimap .street-container {
+    bottom: 10.3%;
+    left: 15%;
+    width: 29vh;
+    height: 18.5vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 1.7rem;
+    margin-bottom: -2.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+}
+
+
+
+.minimap .street-container h2 {
+    position: relative;
+    font-family: Montserrat;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 2px;
+    padding: 10px;
+    width: 75px;
+    color: rgb(255 255 255);
+    text-shadow: 0px 0px 0.8vh rgb(0 0 0), 0px 0px 0.8vh rgb(0 0 0 / 58%);
+}
+.minimap .street-container .zona {
+    top: 5%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+}
+
+.minimap .street-container .strada {
+    top: 25%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    text-align: center;
+}
+
+.minimap .street-container .zona .info-primary {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 10.173em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+.minimap .street-container .zona .h1 {
+    position: relative;
+    font-family: Arial;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 19px;
+    width: 75px;
+    color: rgb(255 255 255);
+    
+}
+
+.minimap .street-container .info-secondary {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: rgb(202 195 185);
+    text-align: left !important;
+    font-size: 10.173em; 
+    top: -8px;
+}
+
+.minimap .street-container .info-primary i {
+    color: rgb(155, 155, 155);
+    font-size: 2vh;
+    padding-right: 1.5vw;
+}
+
+.minimap .street-container .info-primary i::after {
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+}
+
+
+.minimap .info-container {
+    bottom: 4.5%;
+    width: 29vh;
+    opacity: 1.0;
+    margin-left: 1.7rem;
+    margin-bottom: -2.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.minimap .info-container .fa-heart {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    color: rgb(255, 255, 255);
+    scale: 0.85;
+    z-index: 1;
+}
+
+.minimap .info-container .progress1 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);;
+    outline-width: 2px;
+    
+
+}
+.minimap .info-container .circle-progress1 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+.minimap .info-container .circle-progress-value1 {
+    stroke-width: 0;
+    stroke: rgb(170, 66, 66);
+}
+
+.minimap .info-container .circle-progress-circle1 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+    
+}
+.minimap .info-container .circle-progress-text1 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+
+.minimap .info-container .fa-shield-alt {
+    position: absolute;
+    top: 33%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress2 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+       /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress2 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value2 {
+    stroke-width: 0;
+    stroke: rgb(78, 117, 152);
+}
+
+.minimap .info-container .circle-progress-circle2 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+
+.minimap .info-container .circle-progress-text2 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-lungs {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress3 {
+    position: relative;
+    width: 45px !important;
+     /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress3 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value3 {
+    stroke-width: 0;
+}
+
+.minimap .info-container .circle-progress-circle3 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+.minimap .info-container .circle-progress-text3 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-hamburger {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress4 {
+    position: relative;
+    width: 45px !important;
+     /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress4 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value4 {
+    stroke-width: 0;
+    stroke: rgb(192, 176, 87);
+}
+
+.minimap .info-container .circle-progress-circle4 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+.minimap .info-container .circle-progress-text4 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-tint {
+    position: absolute;
+    top: 32%;
+    left: 34%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress5 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress5 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value5 {
+    stroke-width: 0px;
+    stroke: rgb(80, 157, 202);
+}
+
+.minimap .info-container .circle-progress-circle5 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+
+}
+
+.minimap .info-container .circle-progress-text5 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.hudcontainer {
+    display: block;
+    position: absolute;
+    left: 20px !important;
+    bottom: 1px !important;
+}
+
+.hudcontainer.div {
+    float: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.circle-progress-value1 {
+    stroke-width: 0;
+}
+
+@keyframes fillAction {
+    0% {
+        transform: translate(0, 150px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+@keyframes waveAction {
+    0% {
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#waveShape,
+.waveShape {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 150px;
+    height:150px;
+    fill: #04ACFF;
+}
+
+.fillme {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fill-water {
+    margin-top: 100%;
+
+}
+
+@font-face {
+	font-family: 'Hurme-Black';
+	src: url('../fonts/HurmeBlack.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hurme-Light';
+	src: url('../fonts/HurmeLight.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.gauge-title {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+
+.gauge-value {
+	font-size: 24px;
+	fill: #FFFFFF;
+}
+
+.gauge-unity {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+
+#speedometer-container {
+	display: none;
+	/*bottom: 10.9%;*/
+	right: 1.3%;
+	width: 0;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+}
+
+#rpmshow {
+	position: fixed;
+	bottom: 30px;
+	right: 34px;
+	filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.0));
+}
+
+#nitroshow {
+	position: fixed;
+	bottom: 49px;
+	right: 185px;
+	filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.0));
+	transform: rotate(140deg);
+}
+
+.speedcircle {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	bottom: 155px;
+	right: 185px;
+}
+
+.geardisplay {
+	text-align: center;
+	font-family: 'Hurme-Light';
+	font-size: 21px;
+	width: 28px;
+	height: 28px;
+	position: fixed;
+	bottom: 40px;
+	right: 120px;
+	color: rgb(63, 249, 165);
+	border: 1px solid rgb(63, 249, 165);
+	border-radius: 50%;
+}
+
+.geardisplay span {
+	margin: auto !important;
+}
+
+.nitrodisplay {
+	text-align: center;
+	font-family: 'Hurme-Light';
+	font-size: 21px;
+	width: 28px;
+	height: 28px;
+	position: fixed;
+	bottom: 80px;
+	right: 230px;
+	color: rgb(63, 249, 165);
+	border-radius: 50%;
+	transform: rotate(140deg);
+}
+
+.nitrodisplay img {
+	width: 12px;
+	opacity: 0.6;
+	margin: auto !important;
+}
+
+.speeddisplay {
+	font-size: 60px;
+	letter-spacing: 8px;
+	position: fixed;
+	bottom: 130px;
+	right: 80px;
+	font-family: 'Hurme-Black';
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.0);
+}
+
+.healthenginecol {
+	color: rgba(0, 255, 0, 1.0);
+}
+
+.gray {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.int1 {
+	position: fixed;
+	bottom: 82px;
+	right: 148px;
+}
+
+.int2 {
+	position: fixed;
+	bottom: 82px;
+	right: 107.5px;
+}
+
+.int3 {
+	position: fixed;
+	bottom: 82px;
+	right: 67px;
+}
+
+.displaykmh {
+	position: fixed;
+	bottom: 160px;
+	right: 110px;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'Hurme-Light';
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+.unitdisplay {
+	position: fixed;
+	bottom: 85px;
+	right: 120px;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'Hurme-Light';
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+.abs {
+	position: fixed;
+	bottom: 175px;
+	right: 220px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+
+.drift {
+	position: fixed;
+	bottom: 190px;
+	right: 208px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+
+
+.handbrake {
+	position: fixed;
+	bottom: 160px;
+	right: 228px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+
+.seatbelt-info {
+	position: absolute;
+	bottom: 45px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+}
+
+.seatbelt-info img {
+	width: 100%;
+	height: 100%;
+}
+
+.preview-container {
+	/* use flexbox to align contents */
+	display: flex;
+
+	/* make the container fill the entire page */
+	width: 100%;
+	height: 100%;
+
+	/* align the progress vertically and horizontally on the screen */
+	align-content: center;
+	justify-content: center;
+
+	/* tell flexbox to wrap the content so that the centering works as expected */
+	flex-wrap: wrap;
+}
+
+/* create the progress bar container in which the bar will sit */
+.fm-progress-container {
+	/* according to the design, the bar seems to be 512x20 by default */
+	width: auto;
+	height: auto;
+
+	/* configure a 2px thick border for this container */
+	border: 2px solid #0F8CA3;
+
+	/* the content has a 8px padding */
+	padding: 8px;
+
+	/* add shadow to the progress bar */
+	/*box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.5);*/
+
+	position: relative;
+}
+
+.fm-progress-bar {
+	display: flex;
+	flex-direction: row;
+
+	/* fill the container */
+	width: 100%;
+	height: 20px;
+
+	transition: clip-path 0.5s ease;
+	/* progress bar background */
+	/*background-color: rgba(255, 255, 255, 0.1);*/
+}
+
+.fm-progress-bar .fm-progress-block {
+	width: 7px;
+	height: 20px;
+
+	margin-right: 4px;
+
+	/* block color */
+	background-color: #00d9ff;
+
+	/* finishing touch: the shadow aka the glow */
+	/*box-shadow: 0 0 16px 0 #01E7ED;*/
+}
+
+/* for the last progress element, remove the margin */
+.fm-progress-bar .fm-progress-block:last-child {
+	margin-right: 0;
+}
+
+.fm-progress-container .fm-progress-background {
+	/* fill the container */
+	width: calc(100% - 12px);
+	height: calc(100% - 12px);
+
+	/* hackering */
+	margin-top: calc(12px / 2);
+	margin-left: calc(4px / -2);
+
+	/* progress bar background */
+	/*background-color: rgba(255, 255, 255, 0.1);*/
+
+	/* positioning */
+	position: absolute;
+	top: 0;
+}
+
+.enginehealth {
+	position: fixed;
+	/*bottom: 190px;
+	right: 215;*/
+	bottom: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	right: 33.5px;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+.healthbar {
+	position: fixed;
+	bottom: 152px;
+	right: 76px;
+}
+
+.fm-progress-bar .fm-progress-block {
+	width: 7px;
+	margin-right: 4px;
+	
+}
+
+.fm-progress-container {
+	padding: 3px;
+}
+
+.fm-progress-bar .fm-progress-block,
+.fm-progress-bar {
+	height: 7px;
+}
+

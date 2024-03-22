@@ -1,0 +1,1151 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    --font-size: calc((1vh+1vw)/2);
+    font-size: calc(var(--font-size) * 4);
+    overscroll-behavior: contain;
+    background-color: #313131;
+}
+
+.h2o-hud-container {
+    display: none;
+    position: relative;
+    left: 86.9%;
+    max-width: 12.5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.536em;
+    user-select: none;
+}
+
+
+.weapon-hud-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    opacity: 1.0;
+
+}
+.weapon-hud-container .weapon-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0 0 0;
+    width: 100%;
+    align-items: center;
+    opacity: 1.0;
+}
+.weapon-hud-container .weapon-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.353em;
+    -webkit-filter: drop-shadow(0 0 0.2em black);
+}
+
+.weapon-hud-container .weapon-icon-container .imgBx {
+    position: relative;
+    width: 4.004em;
+    height: 4.004em;
+    overflow: hidden;
+}
+
+.weapon-hud-container .weapon-icon-container .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.weapon-hud-container .weapon-container .text-container {
+    align-items: center;
+    width: 100%;
+    font-size: 0.749em;
+    color: #ffffff;
+    -webkit-filter: drop-shadow(0 0 0.2em black);
+    text-shadow: 0 0 0.161em #000;
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.123em;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+.driverlicense-hud-container {
+    margin-top: 115%;
+    padding: 0em 0.5em 0.5em 0em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+
+}
+.driverlicense-hud-container .driverlicense-container {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    background: #19191a;
+    border-radius: 0.125em;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.driverlicense-hud-container .driverlicense-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.749em;
+    color: #71E4DF;
+    text-shadow: 0 0 0.3em rgb(90 247 255 / 80%);
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.123em;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.admintickets-hud-container {
+    margin-top: -90%;
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+
+}
+.admintickets-hud-container .admintickets-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    background: #191919;
+    border-radius: 1.602em 1.602em 1.602em 1.602em;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.admintickets-hud-container .admintickets-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.749em;
+    color: #71E4DF;
+    text-shadow: 0 0 0.3em rgb(90 247 255 / 80%);
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.173em;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.bank-hud-container {
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+
+}
+
+.bank-hud-container .bank-line-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 1.5em;
+    width: 0.045em;
+    padding: 0.115em;
+    right: 0.15em;
+    justify-content: right;
+    align-items: center;
+    background: #191919;
+    opacity: 1.0;
+    margin-right: 0.19em;
+    margin-left: 0.19em;
+}
+
+.bank-hud-container .bank-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    background: #191919;
+    border-radius: 0 1.602em 1.602em 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.bank-hud-container .bank-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.749em;
+    text-shadow: 0 0 0.3em rgb(255 255 255 / 80%);
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.173em;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.bank-hud-container .bank-container i {
+    position: relative;
+    border-radius: 0.307em;
+    right: 5%;
+}
+
+.bank-hud-container .bank-icon-container {
+    display: flex;
+    padding: 0.115em;
+    right: 5.337em;
+    justify-content: right;
+    align-items: center;
+    background: #191919;
+    border-radius: 1.602em 1.602em 1.602em 1.602em;
+}
+
+.bank-hud-container .bank-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.504em;
+    height: 1.504em;
+    overflow: hidden;
+}
+
+.bank-hud-container .bank-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cash-hud-container {
+    padding: 0.231em;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-line-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-top: 1.204em;
+    height: 1.5em;
+    width: 0.045em;
+    padding: 0.115em;
+    right: 0.15em;
+    justify-content: right;
+    align-items: center;
+    background: #191919;
+    opacity: 1.0;
+    margin-right: 0.19em;
+    margin-left: 0.19em;
+}
+
+.cash-hud-container .cash-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    flex-direction: inline;
+    width: 100%;
+    margin-top: 1.204em;
+    align-items: center;
+    background: #191919;
+    border-radius: 0 1.602em 1.602em 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 0.749em;
+    text-shadow: 0 0 0.3em rgb(255 255 255 / 80%);
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: 0.173em;
+    font-family: 'Arial', sans-serif;
+}
+
+.cash-hud-container .cash-container i {
+    position: relative;
+    border-radius: 0.307em;
+    right: 5%;
+}
+
+.cash-hud-container .cash-icon-container {
+    display: flex;
+    padding: 0.115em;
+    background: #191919;
+    border-radius: 1.602em 1.602em 1.602em 1.602em;
+}
+
+.cash-hud-container .cash-icon-container .imgBx {
+
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.498em;
+    height: 1.498em;
+    overflow: hidden;
+}
+
+.cash-hud-container .cash-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-hud-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.017em;
+}
+
+.info-hud-container .info-container {
+    
+    position: relative;
+    display: flex;
+    margin: 0 0.536em;
+    text-align: center;
+}
+
+.info-hud-container .info-container .text-container {
+
+    position: absolute;
+    font-size: 0.749em;
+    text-shadow: 0 0 0.161em #000;
+    opacity: 1.0;
+    letter-spacing: 0.058em;
+    font-family: 'Arial', sans-serif;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.info-hud-container .info-container .info-icon-container {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    display: flex;
+    /*padding: 0.50vh;*/
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    border-radius: 2.668em 2.668em 2.668em 2.668em;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.282em;
+    height: 2.282em;
+    overflow: hidden;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.space-container {
+    display: flex;
+    width: 95.5%;
+    padding: 0.115em;
+    right: 5.337em;
+    justify-content: right;
+    align-items: center;
+    background: #191919;
+    box-shadow: 0 0 0.5em rgb(0 0 0 / 50%);
+    opacity: 1.0;
+}
+
+.logo-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.153em;
+    -webkit-filter: drop-shadow(0 0 0.3em black);
+}
+
+.logo-icon-container .imgBx {
+    position: relative;
+    max-width: 60%;
+    max-height: 60%;
+    width: 10.028em;
+    height: 5.072em;
+    overflow: hidden;
+}
+
+.logo-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.minimap {
+    display: none;
+    bottom: 10.9%;
+    left: 1.3%;
+    width: 0;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.minimap .back-container {
+    bottom: 10.3%;
+    width: 14.5em;
+    height: 9.25em;
+    border: 0.107em solid;
+    border-color: #191919;
+    /*background: linear-gradient(100deg, #00000059, #00000059);*/
+    opacity: 1.0;
+    margin-left: 1.35em;
+    margin-bottom: -1.85em;
+    border-radius: 0.198em;
+    position: absolute;
+    display: inline-flex;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    /*transition: 1s*/
+}
+
+.minimap .street-container {
+    bottom: 10.3%;
+    left: 15%;
+    width: 29vh;
+    height: 18.5vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 1.35em;
+    margin-bottom: -1.85em;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+     /*transition: 1s*/
+}
+
+
+
+.minimap .street-container h2 {
+    position: relative;
+    font-family: Montserrat;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 2px;
+    padding: 10px;
+    width: 75px;
+    color: rgb(255 255 255);
+    text-shadow: 0px 0px 0.8vh rgb(0 0 0), 0px 0px 0.8vh rgb(0 0 0 / 58%);
+}
+.minimap .street-container .zona {
+    top: 5%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    /*transition: 1s*/
+}
+
+.minimap .street-container .strada {
+    top: 25%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    text-align: center;
+    /*transition: 1s*/
+    
+}
+
+.minimap .street-container .zona .info-primary {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 0.877em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+.minimap .street-container .zona .h1 {
+    position: relative;
+    font-family: Arial;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 19px;
+    width: 75px;
+    color: rgb(255 255 255);
+    
+}
+
+.minimap .street-container .info-secondary {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: rgb(202 195 185);
+    text-align: left !important;
+    font-size: 0.877em; 
+    top: -8px;
+}
+
+.minimap .street-container .info-primary i {
+    color: rgb(155, 155, 155);
+    font-size: 2vh;
+    padding-right: 1.5vw;
+}
+
+.minimap .street-container .info-primary i::after {
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+}
+
+
+.minimap .info-container {
+    bottom: 4.5%;
+    width: 14.5em;
+    opacity: 1.0;
+    margin-left: 1.35em;
+    margin-bottom: -1.85em;
+    border-radius: 0.33em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    /*transition: 1s*/
+}
+
+.minimap .info-container .fa-heart {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    color: rgb(255, 255, 255);
+    scale: 0.85;
+    z-index: 1;
+}
+
+.minimap .info-container .progress1 {
+    position: relative;
+    width: 2.401em !important;
+    /*top: -25px;*/
+    height: 2.401em !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);;
+    outline-width: 0.107em;
+    
+
+}
+.minimap .info-container .circle-progress1 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+.minimap .info-container .circle-progress-value1 {
+    stroke-width: 0;
+    stroke: rgb(170, 66, 66);
+}
+
+.minimap .info-container .circle-progress-circle1 {
+    stroke-width: 0px;
+    stroke: #191919;
+    
+}
+.minimap .info-container .circle-progress-text1 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+
+.minimap .info-container .fa-shield-alt {
+    position: absolute;
+    top: 33%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress2 {
+    position: relative;
+    width: 2.401em !important;
+    /*top: -25px;*/
+    height: 2.401em !important;
+       /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 0.107em;
+}
+
+.minimap .info-container .circle-progress2 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value2 {
+    stroke-width: 0;
+    stroke: rgb(78, 117, 152);
+}
+
+.minimap .info-container .circle-progress-circle2 {
+    stroke-width: 0px;
+    stroke: #191919;
+}
+
+.minimap .info-container .circle-progress-text2 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-lungs {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress3 {
+    position: relative;
+    width: 2.401em !important;
+     /*top: -25px;*/
+    height: 2.401em !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 0.107em;
+}
+
+.minimap .info-container .circle-progress3 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value3 {
+    stroke-width: 0;
+}
+
+.minimap .info-container .circle-progress-circle3 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+.minimap .info-container .circle-progress-text3 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-hamburger {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress4 {
+    position: relative;
+    width: 2.401em !important;
+     /*top: -25px;*/
+    height: 2.401em !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 0.107em;
+}
+
+.minimap .info-container .circle-progress4 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value4 {
+    stroke-width: 0;
+    stroke: rgb(192, 176, 87);
+}
+
+.minimap .info-container .circle-progress-circle4 {
+    stroke-width: 0px;
+    stroke: #191919;
+}
+.minimap .info-container .circle-progress-text4 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-tint {
+    position: absolute;
+    top: 32%;
+    left: 34%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress5 {
+    position: relative;
+    width: 2.401em !important;
+    /*top: -25px;*/
+    height: 2.401em !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 0.107em;
+}
+
+.minimap .info-container .circle-progress5 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value5 {
+    stroke-width: 0px;
+    stroke: rgb(80, 157, 202);
+}
+
+.minimap .info-container .circle-progress-circle5 {
+    stroke-width: 0px;
+    stroke: #191919;
+
+}
+
+.minimap .info-container .circle-progress-text5 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.hudcontainer {
+    display: block;
+    position: absolute;
+    left: 20px !important;
+    bottom: 1px !important;
+}
+
+.hudcontainer.div {
+    float: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.circle-progress-value1 {
+    stroke-width: 0;
+}
+
+@keyframes fillAction {
+    0% {
+        transform: translate(0, 150px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+@keyframes waveAction {
+    0% {
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#waveShape,
+.waveShape {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    width: 8.004em;
+    height: 8.004em;
+    fill: #04ACFF;
+}
+
+.fillme {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fill-water {
+    width: 16.009em !important;
+    height: 16.009em !important;
+    margin-top: 100%;
+
+}
+
+@font-face {
+	font-family: 'Hurme-Black';
+	src: url('../fonts/HurmeBlack.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hurme-Light';
+	src: url('../fonts/HurmeLight.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.gauge-title {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+
+.gauge-value {
+	font-size: 24px;
+	fill: #FFFFFF;
+}
+
+.gauge-unity {
+	font-size: 14px;
+	fill: #FFFFFF;
+}
+
+#speedometer-container {
+	display: none;
+	/*bottom: 10.9%;*/
+	width: 10.672em !important;
+    height: 10.672em !important;
+	position: absolute;
+	bottom: 1.601em;
+	right: 1.814em;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+}
+
+#rpmshow {
+    width: 10.672em !important;
+    height: 10.672em !important;
+	position: fixed;
+	bottom: 1.601em;
+	right: 1.814em;
+	filter: drop-shadow(0 0 0.053em rgba(0, 0, 0, 0.0));
+}
+
+#nitroshow {
+    width: 4.803em !important;
+    height: 4.803em !important;
+	position: fixed;
+	bottom: 2.615em;
+	right: 9.872em;
+	filter: drop-shadow(0 0 0.053em rgba(0, 0, 0, 0.0));
+	transform: rotate(140deg);
+}
+
+.geardisplay {
+    position: relative;
+    bottom: 29%;
+    left: 42%;
+	text-align: center;
+	font-family: 'Hurme-Light';
+	font-size: 1.121em;
+	width: 1.333em;
+	height: 1.333em;
+	color: rgb(63, 249, 165);
+	border: 0.048em solid rgb(63, 249, 165);
+	border-radius: 50%;
+}
+
+.geardisplay span {
+	margin: auto !important;
+}
+
+.nitrodisplay {
+    position: relative;
+    top: 60%;
+    right: 15%;
+	text-align: center;
+	font-family: 'Hurme-Light';
+	font-size: 1.121em;
+	width: 1.333em;
+	height: 1.333em;
+	color: rgb(63, 249, 165);
+	border-radius: 50%;
+	transform: rotate(140deg);
+}
+
+.nitrodisplay img {
+	width: 0.571em;
+	opacity: 0.6;
+	margin: auto !important;
+}
+
+.speeddisplay {
+	font-size: 3.202em;
+	position: relative;
+    bottom: 17%;
+	font-family: 'Hurme-Black';
+	color: #FFF;
+	text-shadow: 0.033em 0.033em 0.033em rgba(0, 0, 0, 0.2);
+}
+
+.healthenginecol {
+	color: rgba(0, 255, 0, 1.0);
+}
+
+.gray {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.int1 {
+    /*
+	position: fixed;
+	bottom: 82px;
+	right: 148px;
+    */
+}
+
+.int2 {
+     /*
+	position: fixed;
+	bottom: 82px;
+	right: 107.5px;
+    */
+}
+
+.int3 {
+     /*
+	position: fixed;
+	bottom: 82px;
+	right: 67px;
+    */
+}
+
+.unitdisplay {
+	position: relative;
+    bottom: 20%;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'Hurme-Light';
+	font-weight: 100;
+	font-size: 0.587em;
+	letter-spacing: 0.182em;
+}
+
+.abs {
+	position: relative;
+	right: 52%;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.587em;
+	letter-spacing: 0.182em;
+}
+
+
+.drift {
+	position: relative;
+    right: 47%;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.587em;
+	letter-spacing: 0.182em;
+}
+
+
+
+.handbrake {
+	position: relative;
+	right: 54%;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.587em;
+	letter-spacing: 0.182em;
+}
+
+
+.seatbelt-info {
+    position: relative;
+    left: 95%;
+    bottom: 20%;
+    width: 1.601em;
+    height: 1.601em;
+}
+
+.seatbelt-info img {
+	width: 100%;
+	height: 100%;
+}
+
+.preview-container {
+	/* use flexbox to align contents */
+	display: flex;
+
+	/* make the container fill the entire page */
+	width: 100%;
+	height: 100%;
+
+	/* align the progress vertically and horizontally on the screen */
+	align-content: center;
+	justify-content: center;
+
+	/* tell flexbox to wrap the content so that the centering works as expected */
+	flex-wrap: wrap;
+}
+
+/* create the progress bar container in which the bar will sit */
+.fm-progress-container {
+	/* according to the design, the bar seems to be 512x20 by default */
+	width: auto;
+	height: auto;
+
+	/* configure a 2px thick border for this container */
+	border: 0.107em solid #0F8CA3;
+
+	/* the content has a 8px padding */
+	padding: 0.427em;
+
+	/* add shadow to the progress bar */
+	/*box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.5);*/
+
+	position: relative;
+}
+
+.fm-progress-bar {
+	display: flex;
+	flex-direction: row;
+
+	/* fill the container */
+	width: 100%;
+	height: 1.067em;
+
+	transition: clip-path 0.5s ease;
+	/* progress bar background */
+	/*background-color: rgba(255, 255, 255, 0.1);*/
+}
+
+.fm-progress-bar .fm-progress-block {
+	width: 0.374em;
+	height: 1.067em;
+
+	margin-right: 0.213em;
+
+	/* block color */
+	background-color: #00d9ff;
+
+	/* finishing touch: the shadow aka the glow */
+	/*box-shadow: 0 0 16px 0 #01E7ED;*/
+}
+
+/* for the last progress element, remove the margin */
+.fm-progress-bar .fm-progress-block:last-child {
+	margin-right: 0;
+}
+
+.fm-progress-container .fm-progress-background {
+	/* fill the container */
+	width: calc(100% - 0.64em);
+	height: calc(100% - 0.64em);
+
+	/* hackering */
+	margin-top: calc(0.64em / 0.107em);
+	margin-left: calc(0.213em / -0.107em);
+
+	/* progress bar background */
+	/*background-color: rgba(255, 255, 255, 0.1);*/
+
+	/* positioning */
+	position: absolute;
+	top: 0;
+}
+
+.enginehealth {
+	position: relative;
+	bottom: 13%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Hurme-Light';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 0.587em;
+	letter-spacing: 0.182em;
+}
+
+.healthbar {
+	position: relative;
+    bottom: 12%;
+}
+
+.fm-progress-bar .fm-progress-block {
+	width: 0.374em;
+	margin-right: 0.213em;
+	
+}
+
+.fm-progress-container {
+	padding: 0.16em;
+}
+
+.fm-progress-bar .fm-progress-block,
+.fm-progress-bar {
+	height: 0.374em;
+}
+

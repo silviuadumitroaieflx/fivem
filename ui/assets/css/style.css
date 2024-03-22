@@ -1,0 +1,688 @@
+.h2o-hud-container {
+    display: none;
+    position: relative;
+    left: 86.9%;
+    max-width: 12.5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.93vh;
+    user-select: none;
+}
+
+.bank-hud-container {
+    padding: 0.40vh;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+
+}
+
+.bank-hud-container .bank-line-container {
+    display: flex;
+    height: 3.8vh;
+    width: 0.2vh;
+    padding: 0.20vh;
+    right: 0.26vh;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-right: 0.33vh;
+    margin-left: 0.33vh;
+}
+
+.bank-hud-container .bank-container {
+    padding: 0.40vh;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    border-radius: 0 2.78vh 2.78vh 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.bank-hud-container .bank-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 1.7vh;
+    text-shadow: 0 0 0.46vh #000;
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: .3vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.bank-hud-container .bank-container i {
+    position: relative;
+    border-radius: .30vw;
+    right: 5%;
+}
+
+.bank-hud-container .bank-icon-container {
+    display: flex;
+    padding: 0.20vh;
+    right: 9.26vh;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 2.78vh 2.78vh 2.78vh 2.78vh;
+}
+
+.bank-hud-container .bank-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.61vh;
+    height: 2.61vh;
+    overflow: hidden;
+}
+
+.bank-hud-container .bank-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cash-hud-container {
+    padding: 0.40vh;
+    width: 100%;
+    flex-direction: inline;
+    align-items: center;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-line-container {
+    display: flex;
+    margin-top: 2.09vh;
+    height: 3.8vh;
+    width: 0.2vh;
+    padding: 0.20vh;
+    right: 0.26vh;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-right: 0.33vh;
+    margin-left: 0.33vh;
+}
+
+.cash-hud-container .cash-container {
+    padding: 0.40vh;
+    flex-direction: inline;
+    width: 100%;
+    margin-top: 2.09vh;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    border-radius: 0 2.78vh 2.78vh 0;
+    opacity: 1.0;
+    display: inline-flex;
+}
+
+.cash-hud-container .cash-container .text-container {
+
+    align-items: center;
+    width: 100%;
+    font-size: 1.7vh;
+    text-shadow: 0 0 0.46vh #000;
+    text-align: center;
+    opacity: 1.0;
+    letter-spacing: .3vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.cash-hud-container .cash-container i {
+    position: relative;
+    border-radius: .30vw;
+    right: 5%;
+}
+
+.cash-hud-container .cash-icon-container {
+    display: flex;
+    padding: 0.20vh;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 2.78vh 2.78vh 2.78vh 2.78vh;
+}
+
+.cash-hud-container .cash-icon-container .imgBx {
+
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.60vh;
+    height: 2.60vh;
+    overflow: hidden;
+}
+
+.cash-hud-container .cash-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-hud-container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.5vh;
+}
+
+.info-hud-container .info-container {
+    position: relative;
+    display: flex;
+    margin: 0 0.93vh;
+    text-align: center;
+}
+
+.info-hud-container .info-container .text-container {
+
+    position: absolute;
+    font-size: 1.3vh;
+    text-shadow: 0 0 0.28vh #000;
+    opacity: 1.0;
+    letter-spacing: .1vh;
+    font-family: 'Arial', sans-serif;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.info-hud-container .info-container .info-icon-container {
+    display: flex;
+    /*padding: 0.50vh;*/
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg, #000000AA, #000000AA);
+    border-radius: 4.63vh 4.63vh 4.63vh 4.63vh;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 3.96vh;
+    height: 3.96vh;
+    overflow: hidden;
+}
+
+.info-hud-container .info-container .info-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.space-container {
+    display: flex;
+    width: 93.5%;
+    padding: 0.20vh;
+    right: 9.26vh;
+    justify-content: right;
+    align-items: center;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+}
+
+.logo-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2vh;
+}
+
+.logo-icon-container .imgBx {
+    position: relative;
+    max-width: 60%;
+    max-height: 60%;
+    width: 17.4vh;
+    height: 8.80vh;
+    overflow: hidden;
+}
+
+.logo-icon-container .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.minimap {
+    display: none;
+    bottom: 10.9%;
+    left: 1.3%;
+    width: 0;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.minimap .back-container {
+    bottom: 10.3%;
+    width: 29vh;
+    height: 18.5vh;
+    border: 2px solid;
+    border-color: linear-gradient(100deg, #000000AA, #000000AA);
+    /*background: linear-gradient(100deg, #00000059, #00000059);*/
+    opacity: 1.0;
+    margin-left: 1.7rem;
+    margin-bottom: -2.2rem;
+    border-radius: .3vw;
+    position: absolute;
+    display: inline-flex;
+    transition: 1s
+}
+
+.minimap .street-container {
+    bottom: 10.3%;
+    left: 15%;
+    width: 29vh;
+    height: 18.5vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 1.7rem;
+    margin-bottom: -2.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    transition: 1s
+}
+
+
+
+.minimap .street-container h2 {
+    position: relative;
+    font-family: Montserrat;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 2px;
+    padding: 10px;
+    width: 75px;
+    color: rgb(255 255 255);
+    text-shadow: 0px 0px 0.8vh rgb(0 0 0), 0px 0px 0.8vh rgb(0 0 0 / 58%);
+}
+.minimap .street-container .zona {
+    top: 5%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    transition: 1s
+}
+
+.minimap .street-container .strada {
+    top: 25%;
+    width: 5vh;
+    height: 2vh;
+    border: 4px solid #000000AA;
+    background: linear-gradient(100deg, #00000059, #00000059);
+    opacity: 1.0;
+    margin-left: 0.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: inline-flex;
+    text-align: center;
+    transition: 1s
+    
+}
+
+.minimap .street-container .zona .info-primary {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 1.3vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+.minimap .street-container .zona .h1 {
+    position: relative;
+    font-family: Arial;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 19px;
+    width: 75px;
+    color: rgb(255 255 255);
+    
+}
+
+.minimap .street-container .info-secondary {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: rgb(202 195 185);
+    text-align: left !important;
+    font-size: 1.3vh; 
+    top: -8px;
+}
+
+.minimap .street-container .info-primary i {
+    color: rgb(155, 155, 155);
+    font-size: 2vh;
+    padding-right: 1.5vw;
+}
+
+.minimap .street-container .info-primary i::after {
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+}
+
+
+.minimap .info-container {
+    bottom: 4.5%;
+    width: 29vh;
+    opacity: 1.0;
+    margin-left: 1.7rem;
+    margin-bottom: -2.2rem;
+    border-radius: .5vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: 1s
+}
+
+.minimap .info-container .fa-heart {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    color: rgb(255, 255, 255);
+    scale: 0.85;
+    z-index: 1;
+}
+
+.minimap .info-container .progress1 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);;
+    outline-width: 2px;
+    
+
+}
+.minimap .info-container .circle-progress1 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+.minimap .info-container .circle-progress-value1 {
+    stroke-width: 0;
+    stroke: rgb(170, 66, 66);
+}
+
+.minimap .info-container .circle-progress-circle1 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+    
+}
+.minimap .info-container .circle-progress-text1 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+
+.minimap .info-container .fa-shield-alt {
+    position: absolute;
+    top: 33%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress2 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+       /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress2 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value2 {
+    stroke-width: 0;
+    stroke: rgb(78, 117, 152);
+}
+
+.minimap .info-container .circle-progress-circle2 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+
+.minimap .info-container .circle-progress-text2 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-lungs {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress3 {
+    position: relative;
+    width: 45px !important;
+     /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress3 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value3 {
+    stroke-width: 0;
+}
+
+.minimap .info-container .circle-progress-circle3 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+.minimap .info-container .circle-progress-text3 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-hamburger {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress4 {
+    position: relative;
+    width: 45px !important;
+     /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress4 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value4 {
+    stroke-width: 0;
+    stroke: rgb(192, 176, 87);
+}
+
+.minimap .info-container .circle-progress-circle4 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+}
+.minimap .info-container .circle-progress-text4 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.minimap .info-container .fa-tint {
+    position: absolute;
+    top: 32%;
+    left: 34%;
+    color: white;
+    scale: 0.9;
+    z-index: 1;
+}
+
+.minimap .info-container .progress5 {
+    position: relative;
+    width: 45px !important;
+    /*top: -25px;*/
+    height: 45px !important;
+    /*float: left;
+    margin-left: 10px;*/
+    background: linear-gradient(100deg, #00000059, #00000059);
+    outline-style: solid;
+    outline-color: linear-gradient(100deg, #000000AA, #000000AA);
+    outline-width: 2px;
+}
+
+.minimap .info-container .circle-progress5 {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.minimap .info-container .circle-progress-value5 {
+    stroke-width: 0px;
+    stroke: rgb(80, 157, 202);
+}
+
+.minimap .info-container .circle-progress-circle5 {
+    stroke-width: 0px;
+    stroke: #000000AA;
+
+}
+
+.minimap .info-container .circle-progress-text5 {
+	font-family: "Arial";
+	font-size: 42px;
+	fill: white;
+}
+.hudcontainer {
+    display: block;
+    position: absolute;
+    left: 20px !important;
+    bottom: 1px !important;
+}
+
+.hudcontainer.div {
+    float: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.circle-progress-value1 {
+    stroke-width: 0;
+}
+
+@keyframes fillAction {
+    0% {
+        transform: translate(0, 150px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+@keyframes waveAction {
+    0% {
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#waveShape,
+.waveShape {
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2.0s;
+    width: 150px;
+    height:150px;
+    fill: #04ACFF;
+}
+
+.fillme {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fill-water {
+    margin-top: 100%;
+
+}
+
+
+
